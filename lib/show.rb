@@ -7,21 +7,18 @@ class Show
       puts "         A         B         C       "
       print "    ","-"*31, "\n"
       puts "    |         |         |         |"
-      puts "1   |    #{board[:A1].value}    |    #{board[:B1].value}    |    #{board[:C1].value}    |"
+      puts "1   |    #{board.board_hash[:A1].value}    |    #{board.board_hash[:B1].value}    |    #{board.board_hash[:C1].value}    |"
       puts "    |         |         |         |"
       print "    ","-"*31, "\n"
       puts "    |         |         |         |"
-      puts "2   |    #{board[:A2].value}    |    #{board[:B2].value}    |    #{board[:C2].value}    |"
+      puts "2   |    #{board.board_hash[:A2].value}    |    #{board.board_hash[:B2].value}    |    #{board.board_hash[:C2].value}    |"
       puts "    |         |         |         |"
       print "    ","-"*31, "\n"
       puts "    |         |         |         |"
-      puts "3   |    #{board[:A3].value}    |    #{board[:B3].value}    |    #{board[:C3].value}    |"
+      puts "3   |    #{board.board_hash[:A3].value}    |    #{board.board_hash[:B3].value}    |    #{board.board_hash[:C3].value}    |"
       puts "    |         |         |         |"
       print "    ","-"*31, "\n"
   end
 
 end
 
-a = Board.new
-puts a
-puts Show.new.show_board(a.board)
