@@ -61,6 +61,9 @@ class Board
   elsif tt[2] == "O" && tt[5] == "O" && tt[8] == "O" || tt[2] == "X" && tt[5] == "X" && tt[8] == "X"
     puts "#{player_to_save.name} a gagné"
     return true
+  elsif tt[6] == "O" && tt[7] == "O" && tt[8] == "O" || tt[6] == "X" && tt[7] == "X" && tt[8] == "X"
+    puts "#{player_to_save.name} a gagné"
+    return true
   else
     return false
 
